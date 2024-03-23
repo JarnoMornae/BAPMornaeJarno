@@ -47,7 +47,7 @@ Tips:
 
 - Gebruik functietoets **F5** om het document te compileren en het resultaat te bekijken.
 - Als na compilatie de bibliografie niet zichtbaar is, probeer die dan expliciet te compileren met **F8** en daarna opnieuw **F5**
-
+ok
 ### Jabref
 
 Kies voor Options > Preferences en pas volgende instellingen aan:

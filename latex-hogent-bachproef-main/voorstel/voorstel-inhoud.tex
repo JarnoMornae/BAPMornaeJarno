@@ -3,37 +3,64 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+De bachelorproef gaat over ondersteuning bieden aan zowel leerkrachten als leerlingen in de derde graad door middel van chatbots en AI. 
+Binnen het huidige onderwijslandschap is differentiatie en onderwijs op maat van de kinderen een belangrijk gegeven geworden. 
+Klassen worden als maar groter door personeelstekort en de druk op leerkrachten vergroot doordat de vraag naar differentiatie steeds stijgt. 
+Huiswerkklassen worden opgericht om gelijke kansen te creëren en leerlingen te ondersteunen.
+ 
+Binnen deze bachelorproef wordt er gezocht naar een oplossing voor dit probleem. 
+Een chatbot waar leerlingen vragen aan kunnen stellen tijdens het maken van hun oefeningen, kan het werk van de leerkracht verlichten maar ook meer inzicht geven over de denkwijze van kinderen. 
+Aan de hand van verzamelde data kan de leerkracht op de juiste manier gaan helpen en de problemen die de leerling kan ondervinden, bij de basis aanpakken. 
+De leerling heeft ook baat bij dit proces. 
+De leerling hoeft niet te wachten tot de leerkracht bij hem/haar komt. 
+Hij kan zijn vraag rechtstreeks aan de chatbot stellen die hem op een gestructureerde en duidelijk manier kan verder helpen. 
+De focus in deze bachelorproef zal gelegd worden op leerlingen van de derde graad lager onderwijs. 
 
+Binnen deze bachelorproef worden volgende hoofdvraag en bij vragen beantwoord: 
 \begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
+\item Welk framework is het meeste geschikt om een chatbot te ontwikkelen ter ondersteuning van het lager onderwijs? 
+\begin{itemize}
+\item Wat zijn de belangrijkste criteria waaraan de chatbot moet voldoen?
+\item Welke mogelijke frameworks kunnen er gebruikt worden? 
+\item Wat zijn de voor en nadelen van de frameworks?
+\item Welk framework kan de vooropgestelde criteria vervullen? 
+\item Wat is het slagingspercentage van de vooropgestelde criteria?
 \end{itemize}
-
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
-
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
-
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
-
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+\end{itemize}
+Hierbij zullen schaalbaarheid, aanpasbaarheid en duurzaamheid van het framework afgetoetst worden. 
+De requirements zullen in kaart gebracht worden en er zal een grondige analyse gemaakt worden over de chatbot. 
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+Een chatbot is software die een menselijke conversatie simuleert. De interactie tussen het softwarepakket en de persoon gebeurt aan de hand van tekstinvoer of spraak. Het is een service aangedreven door regels en soms artificiële intelligentie ~\autocite{Schlicht2016}.
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+\textbf{Opbouw van een chatbot}\newline
+De opbouw van het programma ziet er hetzelfde uit als een normale applicatie. Er is een applicatielaag, een database en een user interface waarmee de gebruiker in contact komt.  In de database laag bevinden zich gesprekken, documenten en informatie die de applicatielaag gaat gebruiken om antwoorden te vormen en de gebruiker verder te helpen. Deze basis opbouw vindt men in elke chatbot terug ongeacht de complexiteit. ~\autocite{Techlabs2017} \newline
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+Chatbots kunnen opgedeeld worden in 2 grote groepen op basis van complexiteit. In de eerste groep bevinden zich de chatbots die gebaseerd zijn op een set regels. In de tweede groep bevinden zich de meer complexe chatbots die gebruik maken van machine learning. De chatbots die gebaseerd zijn op regels, zijn gelimiteerd. Ze kunnen enkel antwoorden op specifieke commando’s. Als het commando niet correct is, weet het programma niet wat het moet doen. Chatbots die technieken gebruiken vanuit machine learning zijn complexer, maar ook intelligenter. Deze bot heeft een artificieel brein, beter bekend als artificiële intelligentie. De bot “begrijpt” de taal (invoer) en niet enkel het commando. Complexiteit is de belangrijkste factor bij het onderverdelen van soorten chatbots. ~\autocite{Schlicht2016}. \newline
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+Chatbots die gebruik maken van artificiële intelligentie worden ingedeeld in 3 classificatiemethoden met elk hun eigen complexiteit. De makkelijkste methode kunnen we als volgt benoemen: “vergelijken van patronen”. De applicatielaag gaat de input van de gebruiker vergelijken met de data die teruggevonden wordt in de database. Als de applicatielaag vergelijkende patronen vindt in de database, kiest het programma het meest geschikte antwoord. Hieronder bevindt  zich een beschrijving over de werkwijze van het programma ~\autocite{Techlabs2017}. \newline
+Een gebruiker vraagt: Wie is Abraham Lincoln? De applicatie gaat op zoek naar overeenkomstige patronen in de database en vindt de naam Abraham Lincoln terug. Alleen werd de vraag in deze data als volgt geformuleerd: 'Weet jij toevallig wie Abraham Lincoln was?'. Het programma zal het antwoord nemen van de vraag die reeds beantwoord werd, aangezien er een overeenkomst is van het patroon Abraham Lincoln. 
+Bovenstaande werking kan nog beter gemaakt worden. Door er meer features aan toe te voegen en complexere code te gaan implementeren, kan het programma in een complexere classificatiemethode terecht komen. \newline
 
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+De volgende classificatiemethode is iets complexer en meer gesofisticeerd dan de methode die patronen vergelijkt. Het basisprincipe is nog steeds hetzelfde. De input wordt vergeleken met informatie uit de database. Op dit niveau gaat de applicatie de data en de input vergelijken aan de hand van een algoritme. Voor elke input moet er een uniek patroon te vinden zijn in de database dat voor een gepast antwoord zorgt. 
+Hierdoor worden de antwoorden in classificaties beperkt en krijgt de data meer structuur. Een voorbeeld van een algoritme om natural language processing toe te passen, is het algoritme van Bayes. Dit algoritme gaat string inputs vergelijken en een score toekennen. De klasse die het meest overeenkomt met de input, wordt gekozen. Deze classificatiemethode is reeds complexer en meer ontwikkeld dan de vorige classificatiemethode. \newline 
+De laatste classificatie en de volgende stap in complexiteit zijn de artificiële neurale netwerken. Hierbij gaat de input string gebruik maken van gewogen connecties die gevormd werden toen de data getraind werd. Door deze training geeft het programma meer accurate antwoorden. Iedere keer dat de data getraind wordt, gaat het algoritme het gewicht van de connectie verbeteren. Op deze manier worden de connecties steeds beter en de antwoorden accurater. 
+Hoe het programma omgaat met de gegeven input van de gebruiker wordt natural language processing genoemd ~\autocite{Techlabs2017}.
+
+\textbf{Gebruik van chatbots in een leeromgeving.}\newline
+De Beijing Language and Culture University deed onderzoek naar het effect van chatbot-assisted learning. 
+Uit de studie bleek kwam een verbetering naar voor op vlak van leerprestaties, expliciet redeneren en het vasthouden van de kennis. 
+De integratie van chatbots biedt voordelen aan zoals onmiddellijke hulp, snelle toegang tot informatie, verbeterde leerresultaten en een betere onderwijsomgeving. 
+De bevindingen met betrekking tot kritisch denken, leerbetrokkenheid en motivatie waren tegenstrijdig. 
+Chatbots hadden een positief effect op het aanleren van nieuwe zaken maar niet op de motivatie van de leerlingen ~\autocite{Deng2023}.
+
+Het gebruik van chatbots in de klas zorgt voor minder stres, meer motivatie en zorgt ervoor dat leerlingen op hun eigen tempo kunnen bijleren. 
+De meeste leerlingen zijn tevreden met het gebruik van een chatbot maar ondervinden wel problemen op taal-vlak. ~\autocite{AitBaha2023}
+
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -42,31 +69,37 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
+Als methodologie wordt er gebruik gemaakt van een vergelijkstudie. Eerst wordt er onderzoek gedaan naar welke frameworks zich ertoe leunen om de chatbot te maken. 
+De mogelijkheden ervan worden afgetoetst en in kaart gebracht. 
+Nadien wordt er een interview ingepland met een leerkracht. 
+Op basis van dit interview worden de requirements van de chatbot in kaart gebracht.
+Op basis hiervan wordt er een analyse opgesteld. Use cases, user stories, acceptence criteria,... worden opgesteld.
+Op basis van dit interview worden de criteria om het framework te beoordelen opgesteld. 
+Aan de criteria wordt een bepaald gewicht toegekend. 
+Op basis van het gewicht per criteria, kan het slagingspercentage opgesteld worden van het framework. 
+Tot slot wordt er besproken waarom framework X het beste gebruikt wordt om deze chatbot te ontwikkelen. 
+Om dit te bewijzen wordt er een korte proof of concept opgesteld die de leerkracht kan gebruiken om de criterisa te beoordelen. 
+Binnen welk framework de chatbot uitgewerkt zal worden zal duidelijker worden wanneer de literatuurstudie afgerond werd. 
+Microsoft Bot Framework, IBM Watson Assistant, Google Dialogflow, Rasa, Botpress en Wit.ai zullen onder de loep genomen worden. 
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
-
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
-
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
-
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
-
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
-
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+Aangezien dit voorstel geen rechtstreekse bedrijfscasus is ga ik eens aftoetsen bij de hoge school of dit onderzoek voldoet aan de vereisten. 
+Indien het voldoet kan ik overgaan naar het zoeken van een copromotor. 
+Ik verwacht meer duiding hierover gehad te hebben tegen 22/12. 
+Indien dit goedgekeurd wordt, kan er verder gewerkt worden aan de literatuurstudie. 
+Deze zou grotendeels afgewerkt moeten zijn tegen 28/02. 
+Voor 19/03 zou ik graag alle interviews afgenomen hebben. 
+19/04 hoop ik dat de analyse afgerond werd en er gestart kan worden met een korte proof of concept. 
+10/05 hoop ik dat de proof of concept afgerond is. 
+Dan kunnen we overgaan tot het voorstellen van de proof of concept aan de leerkrachten en we kunnen overgaan tot een conclusie. 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
-
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
-
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Ik verwacht een positief resultaat. Veel gaat natuurlijk afhangen van de data die de chatbot ter beschikking heeft. Vandaar dat er ook gekozen wordt voor 1 specifieke les. Als dit onderzoek een positief resultaat heeft, kan dit misschien het begin zijn van een groots project dat veel kinderen kan ondersteunen. Kinderen die minder ondersteuning ervaren van ouders/leerkrachten kunnen dankzij deze oplossing ondersteuning op maat krijgen om op die manier hun eigen niveau naar boven te tillen. Ik verwacht ook dat de chatbot een positieve indruk zal nalaten bij de leerkrachten. Zij kunnen meer inzicht krijgen in het leerproces van de kinderen en zo meer op maat gaan begeleiden. 
 
